@@ -1,0 +1,16 @@
+<h1>{{title}} with <span id="totalUsers">1</span> user(s) online</h1>
+
+<p>What can you draw before the timer runs out?</p>
+
+<p id="timer"></p>
+
+<canvas id="drawing" height="500" width="500"></canvas>
+
+<div>
+  <h3>Choose your drawing color</h3>
+  <span>Color:</span> <input type="color" id="color">  <p>If you are not using Chrome, try a HTML color name like <code><b>orange</b></code> or a hexcode e.g. <code><b>#FF8300</b></code></span>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/javascripts/socketclient.js"></script>
+<script src="/javascripts/drawingclient.js"></script>
